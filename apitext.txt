@@ -1,0 +1,22 @@
+// Get and format current time 
+	function getCurrentTime()
+{
+		var now = new Date();
+		var hours = now.getHours();
+		var mins=now.getMinutes();
+		var period='am';
+		if(hours > 11)
+		{
+			period='pm';
+			if(hour>12)hours-=12;//format for 12-hr clock
+		}
+		if(mins<10)
+		{
+			mins='0'+mins;//format minutes
+		}
+		return hours+':'+mins+period;
+}
+
+47c32f5025716b6a6d6fa67067b6698b
+
+https://api.openweathermap.org/data/2.5/weather?q=Bokaro Steel City&appid=47c32f5025716b6a6d6fa67067b6698b
